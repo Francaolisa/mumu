@@ -115,7 +115,7 @@ function initNavbarScroll() {
 // Fetch live token data
 async function fetchTokenData() {
     try {
-        const contractAddress = 'GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump';
+        const contractAddress = '0x0cd8EE728E8E9730a6E2cD1F0B5Dc2cb22EE298F';
         const response = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${contractAddress}`);
         const data = await response.json();
         
