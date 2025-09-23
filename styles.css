@@ -337,14 +337,14 @@ body {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--bright-gold);
-    text-shadow: 0 0 10px var(--bright-gold);
+    color: #059615;
+    /* text-shadow: 0 0 5px var(--bright-gold); */
     animation: number-glow 2s infinite alternate;
 }
 
 @keyframes number-glow {
-    from { text-shadow: 0 0 5px var(--bright-gold); }
-    to { text-shadow: 0 0 20px var(--bright-gold), 0 0 30px var(--bright-gold); }
+    from { text-shadow: 0 0 1px var(--bright-gold); }
+    to { text-shadow: 0 0 1px var(--bright-gold), 0 0 20px var(--bright-gold); }
 }
 
 .stat-text {
@@ -825,7 +825,7 @@ section {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, var(--goat-gold), var(--bright-gold), var(--light-brown), var(--goat-brown));
+    background: linear-gradient(45deg, #453b4a, #0f0e0c, #733c06, var(--goat-brown));
     background-size: 300% 300%;
     z-index: -1;
     animation: border-flow 4s ease infinite;
@@ -904,9 +904,9 @@ section {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--goat-gold);
+   color: #059615;
     margin-top: auto;
-    text-shadow: 0 0 15px var(--goat-gold);
+    text-shadow: 0 0 15px #075d15;
     animation: live-flicker 1.5s infinite;
 }
 
@@ -1119,11 +1119,12 @@ section {
 
 /* DEGEN CTA */
 .cta-section {
-    background: linear-gradient(45deg, var(--goat-brown), var(--goat-gold));
+    background: linear-gradient(45deg, #1c1c1c, #2c292a);
     color: var(--text-bright);
     text-align: center;
     position: relative;
     overflow: hidden;
+    
 }
 
 .cta-section::before {
@@ -1180,13 +1181,15 @@ section {
 }
 
 .cta-text {
-    font-size: 1.25rem;
-    opacity: 1;
-    margin-bottom: 3rem;
-    z-index: 2;
-    position: relative;
-    font-weight: 600;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+  opacity: 1;
+  margin-bottom: 1rem;
+  z-index: 2;
+  position: relative;
+  font-weight: 200;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-align: left;
+
 }
 
 .cta-buttons {
@@ -1217,7 +1220,10 @@ section {
     color: var(--dark-bg);
     border: 3px solid var(--bright-gold);
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+    background: var(--bright-gold);
+     margin-top: 25px;
 }
+
 
 .btn-cta-primary:hover {
     transform: translateY(-5px) scale(1.1);
